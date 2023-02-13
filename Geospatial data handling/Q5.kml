@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+	<Document>
+		<Style id="z1">
+			<IconStyle>
+				<Icon>
+					<href>
+					http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png
+					</href>
+				</Icon>
+			</IconStyle>
+			<PolyStyle>
+        <fill>0</fill>
+        <color>#6fffffff</color>
+      </PolyStyle>
+		</Style>
+  <Placemark>
+    <name>Home</name>
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28315771425873,34.032761983504216</coordinates>
+    </Point>
+     </Placemark>
+
+     <Folder> 
+     
+       <name>Libraries</name>
+	 <Placemark>
+	<name>Leavey Library</name>
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28293573145733,34.0213496719935</coordinates>
+    </Point>
+	 </Placemark>
+     
+
+
+	 <Placemark>
+	<name>Seaver Sc Library</name>
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28871446159208,34.01982777846295</coordinates>
+    </Point>
+	 </Placemark>
+
+
+	 <Placemark>
+	<name>Edward Library</name>
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28435716542282,34.02046810039327</coordinates>
+    </Point>
+	 </Placemark>
+    </Folder>
+
+
+    <Folder> 
+     
+       <name>Waterworks</name>
+	 <Placemark>
+	<name>Fountain at Viterbi</name>
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28907921956984,34.02048162792673</coordinates>
+    </Point>
+	 </Placemark>
+    
+
+
+	 <Placemark>
+	<name>Fountain at Leavey</name>
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28352200183541,34.02062273349685</coordinates>
+    </Point>
+	 </Placemark>
+
+
+	 <Placemark>
+	<name>Fountain at USC Village</name>	
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28501160848721,34.025249088483</coordinates>
+    </Point>
+	 </Placemark>
+    </Folder>
+
+    <Folder> 
+     
+       <name>Eateries</name>
+
+	 <Placemark>
+	<name>Panda Express Restaurant</name>
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28624871571253,34.02026887789436</coordinates>
+    </Point>
+	 </Placemark>
+
+
+	 <Placemark>
+	<name>Village Starbucks </name>
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.2843681741918,34.02440933589407</coordinates>
+    </Point>
+	 </Placemark>
+
+
+	 <Placemark>
+	<name>Cafe Dulce</name>
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28497386948189,34.0251220006516</coordinates>
+    </Point>
+	 </Placemark>
+
+    </Folder>
+
+
+
+
+
+    <Folder> 
+     
+       <name>Entrances(gates)</name>
+	 <Placemark>
+	<name>Entrance McClintock</name>
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28721933961351,34.02487201625711</coordinates>
+    </Point>
+	 </Placemark>
+
+	 <Placemark>
+	<name>Entrance Downey Way</name>	
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.29130036159148,34.02195935314328</coordinates>
+    </Point>
+	 </Placemark>
+
+
+	 <Placemark>
+	<name>Entrance Watt Way</name>	
+	<styleUrl>#z1</styleUrl>
+    <Point>
+      <coordinates>-118.28906456258004,34.01856850430744</coordinates>
+    </Point>	
+  </Placemark>
+ </Folder>
+
+
+<Placemark> 
+      <name> Convex Hull</name>
+      <styleUrl>"#redLineGreenPoly"</styleUrl>
+      <Polygon>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+
+             -118.2890645625,34.0185685043,100
+             -118.2913003615,34.0219593531,100
+             -118.2831577142,34.0327619835,100
+             -118.2829357314,34.0213496719,100
+             -118.2835220018,34.0206227334,100
+             -118.2890645625,34.0185685043,100
+
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+
+<Style id ="redline">
+<LineStyle>
+<color>#a00000ff</color>
+<width>3</width>
+</LineStyle>
+</Style>
+
+
+
+<Style id="#redLineGreenPoly">
+      <LineStyle>
+        <width>5</width>
+        <color>#a00000ff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>#a00000ff</color>
+      </PolyStyle>
+    </Style>
+
+
+    <Placemark>
+      <name>line to FountainVillage</name>
+      <styleUrl>#redline</styleUrl>
+      <LineString>
+        <coordinates>-118.28315771425873,34.032761983504216,50 -118.28501160848721,34.025249088483,50</coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>line to CafeDulce</name>
+      <styleUrl>#redline</styleUrl>
+      <LineString>
+        <coordinates>-118.28315771425873,34.032761983504216,50 -118.28497386948189,34.0251220006516,50</coordinates>
+      </LineString>
+    </Placemark>
+
+
+    <Placemark>
+      <name>line to VillageStarbuck</name>
+      <styleUrl>#redline</styleUrl>
+      <LineString>
+        <coordinates>-118.28315771425873,34.032761983504216,50 -118.2843681741918,34.02440933589407,50</coordinates>
+      </LineString>
+    </Placemark>
+
+
+    <Placemark>
+      <name>line to EntranceMcClintock</name>
+      <styleUrl>#redline</styleUrl>
+      <LineString>
+        <coordinates>-118.28315771425873,34.032761983504216,50 -118.28721933961351,34.02487201625711,50
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+
+  </Document>
+</kml>
